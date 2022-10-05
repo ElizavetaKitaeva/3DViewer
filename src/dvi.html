@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="dviewer-v1.0">3DViewer v1.0</h1>
+<p>3DViewer представляет из себя программу для просмотра 3D моделей в
+каркасном виде. Программа реализована на языке программирования Си с
+использованием Qt (фреймворк для разработки кроссплатформенного
+программного обеспечения на языке программирования C++).</p>
+<h2 id="информация">Информация</h2>
+<p>Сами модели загружаются из файлов формата .obj и есть возможность
+просматривать их на экране с возможностью вращения, масштабирования и
+перемещения.</p>
+<p>Каркасная модель - модель объекта в трёхмерной графике,
+представляющая собой совокупность вершин и рёбер, которая определяет
+форму отображаемого многогранного объекта в трехмерном пространстве.</p>
+<p>Файлы .obj - это формат файла описания геометрии, впервые
+разработанный компанией Wavefront Technologies. Формат файла открыт и
+принят многими поставщиками приложений для 3D-графики.</p>
+<p>Формат файла .obj - это простой формат данных, который представляет
+только трехмерную геометрию, а именно положение каждой вершины,
+положение UV координат текстуры каждой вершины, нормали вершин и грани,
+которые определяют каждый многоугольник как список вершин и вершин
+текстуры. Координаты obj не имеют единиц измерения, но файлы obj могут
+содержать информацию о масштабе в удобочитаемой строке комментариев.</p>
+<h2 id="функционал">Функционал</h2>
+<h3 id="основные-функции-3dviewer">Основные функции 3DViewer:</h3>
+<ul>
+<li><p>При запуске программы открывается главное окно программы, где
+расположен блок для просмотра моделей; кнопка окрытия файла; кнопка
+открытия настроек; текстовые блоки для вывода названия,количества ребер
+и вершин фигуры; текстовые блоки и кнопки для scale, rotate и
+translate;</p></li>
+<li><p>Возможность перемещать модель на заданное расстояние относительно
+осей X, Y, Z;</p></li>
+<li><p>Возможность поворачивать модель на заданный угол относительно
+своих осей X, Y, Z; <img src="img/interface.png"
+alt="Главное окно программы" /></p></li>
+<li><p>При нажатии на кнопку настроек открывается окно, где можно
+поменять тип проекции (параллельная и центральная), тип (сплошная,
+пунктирная), цвет и толщину ребер, способ отображения (отсутствует,
+круг, квадрат), цвет и размер вершин, выбирать цвет фона. Настройки
+сохраняются и при последующем открытии программы они останутся в том
+виде, в каком пользователь вышел из программы (с условием, что настройки
+были сохранены и файл не был нарушен); <img src="img/settings.png"
+alt="Окно с настройками" /></p></li>
+<li><p>Возможность загружать каркасную модель из файла формата obj
+(поддержка только списка вершин и поверхностей); <img
+src="img/object.png" alt="Просмотр каркасной модели" /></p></li>
+<li><p>Программа позволяет сохранять полученные (“отрендеренные”)
+изображения в файл в форматах bmp и jpeg;</p></li>
+<li><p>Программа позволяет по специальной кнопке записывать небольшие
+“скринкасты” - текущие пользовательские аффинные преобразования
+загруженного объекта в gif-анимацию (640x480, 10fps, 5s). <img
+src="img/imgif.png" alt="Кнопки для создания gif и img" /></p></li>
+</ul>
+</body>
+</html>
